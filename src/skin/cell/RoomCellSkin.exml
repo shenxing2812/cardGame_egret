@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoomCellSkin" width="628" height="74" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="{data.roomName}" x="26" y="27"/>
+	<e:Label text="{data.roomNum}" x="350" y="27"/>
+</e:Skin>

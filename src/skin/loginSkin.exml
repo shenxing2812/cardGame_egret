@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin  class="loginSkin" width="600" height="400" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="用户名：" x="134" y="90"/>
+	<e:Label text="密    码：" x="134" y="145"/>
+	<e:EditableText borderColor="0xffffff" border="true" text="" maxChars="16" id="txt_name" width="259"  height="37" x="244" y="89"/>
+	<e:EditableText borderColor="0xffffff" border="true"  text="" maxChars="16"  id="txt_pwd" height="37" y="143" width="259"  x="244"/>
+	<e:Button id="btn_login" label="登录" x="227" y="214"/>
+</e:Skin>
