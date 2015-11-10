@@ -117,6 +117,8 @@ var Main = (function (_super) {
      * Create scene interface
      */
     p.startCreateScene = function () {
+        GameManager.getInstance().gameConfig.stage_width = this.stage.stageWidth;
+        GameManager.getInstance().gameConfig.stage_height = this.stage.stageHeight;
         MyEventDispatcher.getInstance().addEventListener(LoginEvent.SOCKET_STATE_CHANGED, this.socketStateChanged, this);
         Mysocket.getInstance();
     };
@@ -135,8 +137,8 @@ var Main = (function (_super) {
     };
     p.loginSuccess = function () {
         this.removeChild(this.loginWnd);
-        this.game = new Game(this.stage.stageWidth, this.stage.stageHeight);
-        this.addChild(this.game);
+        GameManager.getInstance().game = new Game(this.stage.stageWidth, this.stage.stageHeight);
+        this.addChild(GameManager.getInstance().game);
     };
     return Main;
 })(eui.UILayer);

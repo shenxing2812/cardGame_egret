@@ -11,7 +11,7 @@ var BaseCmd = (function () {
         Mysocket.getInstance().sendCmdStr(this.parseCmd());
     };
     p.parseCmd = function () {
-        return "{cmdId:" + this.cmdId + "}";
+        return JSON.stringify({ cmdId: this.cmdId });
     };
     return BaseCmd;
 })();

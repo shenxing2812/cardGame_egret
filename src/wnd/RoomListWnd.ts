@@ -13,8 +13,16 @@ class RoomListWnd extends egret.Sprite {
         this.graphics.drawRect(0,0,w,h);
         this.graphics.endFill();
         
+        MyEventDispatcher.getInstance().addEventListener(RoomEvent.GET_ROOM_LIST,this.onGetRoomList,this);
+        var cmd: GetRoomListCmd = new GetRoomListCmd();
+        cmd.sendCmd();
+    }
+    
+    private onGetRoomList(evt:RoomEvent):void{
+        //此处处理房间列表数据
         this.build();
     }
+    
     protected build():void {
         //先创建一个数组
         var sourceArr:any[] = [];
@@ -26,7 +34,7 @@ class RoomListWnd extends egret.Sprite {
         var myCollection: eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
         
         var dataGroup: eui.List = new eui.List();
-        dataGroup.touchEnabled = true;
+        dataGroup.touchChildren = true;
         dataGroup.dataProvider = myCollection;
         dataGroup.horizontalCenter = 0;
         dataGroup.verticalCenter = 0;
@@ -60,6 +68,9 @@ class RoomListWnd extends egret.Sprite {
     }
 
     private onButtonClick(e: egret.TouchEvent) {
-       alert(this.dataGroup.selectedIndex);
+    //   alert(this.dataGroup.selectedIndex);
+       
+       var cmd: EnterRoomCmd = new EnterRoomCmd(this.dataGroup.selectedIndex+"");
+       cmd.sendCmd();
     }
 }

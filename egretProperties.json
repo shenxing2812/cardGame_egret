@@ -1,25 +1,26 @@
 {
-  "native": {
-    "path_ignore": []
-  },
-  "publish": {
-    "web": 0,
-    "native": 1,
-    "path": "bin-release"
-  },
-  "egret_version": "2.5.4",
-  "modules": [
-    {
-      "name": "egret"
-    },
-    {
-      "name": "eui"
-    },
-	{
-	  "name": "socket"
+	"native": {
+		"path_ignore": [],
+		"ios_path": "../cardGame_ios"
 	},
-    {
-      "name": "res"
-    }
-  ]
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "2.5.4",
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "res"
+		}
+	]
 }

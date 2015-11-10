@@ -46,6 +46,8 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
+declare class sddSkin extends eui.Skin{
+}
 declare class RoomCellSkin extends eui.Skin{
 }
 declare class loginSkin extends eui.Skin{

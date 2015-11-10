@@ -10,9 +10,15 @@ var RoomListWnd = (function (_super) {
         this.graphics.beginFill(0xcccccc);
         this.graphics.drawRect(0, 0, w, h);
         this.graphics.endFill();
-        this.build();
+        MyEventDispatcher.getInstance().addEventListener(RoomEvent.GET_ROOM_LIST, this.onGetRoomList, this);
+        var cmd = new GetRoomListCmd();
+        cmd.sendCmd();
     }
     var d = __define,c=RoomListWnd;p=c.prototype;
+    p.onGetRoomList = function (evt) {
+        //此处处理房间列表数据
+        this.build();
+    };
     p.build = function () {
         //先创建一个数组
         var sourceArr = [];
@@ -23,7 +29,7 @@ var RoomListWnd = (function (_super) {
         //用ArrayCollection包装
         var myCollection = new eui.ArrayCollection(sourceArr);
         var dataGroup = new eui.List();
-        dataGroup.touchEnabled = true;
+        dataGroup.touchChildren = true;
         dataGroup.dataProvider = myCollection;
         dataGroup.horizontalCenter = 0;
         dataGroup.verticalCenter = 0;
@@ -50,7 +56,9 @@ var RoomListWnd = (function (_super) {
         btn_selectRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
     };
     p.onButtonClick = function (e) {
-        alert(this.dataGroup.selectedIndex);
+        //   alert(this.dataGroup.selectedIndex);
+        var cmd = new EnterRoomCmd(this.dataGroup.selectedIndex + "");
+        cmd.sendCmd();
     };
     return RoomListWnd;
 })(egret.Sprite);

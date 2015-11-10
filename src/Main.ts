@@ -119,12 +119,13 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
+        GameManager.getInstance().gameConfig.stage_width = this.stage.stageWidth;
+        GameManager.getInstance().gameConfig.stage_height = this.stage.stageHeight;
         MyEventDispatcher.getInstance().addEventListener(LoginEvent.SOCKET_STATE_CHANGED,this.socketStateChanged,this);
         Mysocket.getInstance();
     }
     
     private loginWnd: LoginWnd;
-    private game: Game;
     
     private socketStateChanged():void{
         if(Mysocket.getInstance().isConnected){
@@ -144,7 +145,7 @@ class Main extends eui.UILayer {
     private loginSuccess(): void {
         this.removeChild(this.loginWnd);
         
-        this.game = new Game(this.stage.stageWidth,this.stage.stageHeight);
-        this.addChild(this.game);
+        GameManager.getInstance().game = new Game(this.stage.stageWidth,this.stage.stageHeight);
+        this.addChild(GameManager.getInstance().game);
     }
 }

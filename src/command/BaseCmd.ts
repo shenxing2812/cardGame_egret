@@ -12,7 +12,7 @@ class BaseCmd {
     }
     
     protected parseCmd():string{
-        return "{cmdId:"+this.cmdId+"}";
+        return JSON.stringify({ cmdId: this.cmdId });
     }
     
 	public constructor() {
