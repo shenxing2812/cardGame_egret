@@ -125,6 +125,16 @@
 				"isFolder":false,
 				"key":"tracklight_png",
 				"name":"tracklight_png"
+			},
+			{
+				"isFolder":false,
+				"key":"card_back_png",
+				"name":"card_back_png"
+			},
+			{
+				"isFolder":false,
+				"key":"animal1_png",
+				"name":"animal1_png"
 			}]
 		}
 	},

@@ -119,10 +119,25 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
+        this.card= new CardView(3,3);
+        this.card.x = 300;
+        this.card.y = 300;
+        this.addChild(this.card);
+        
+        var btn_ok = new eui.Button();
+        this.addChild(btn_ok);
+        btn_ok.addEventListener(egret.TouchEvent.TOUCH_TAP,this.CardTrance,this);
+        return;
+       
         GameManager.getInstance().gameConfig.stage_width = this.stage.stageWidth;
         GameManager.getInstance().gameConfig.stage_height = this.stage.stageHeight;
         MyEventDispatcher.getInstance().addEventListener(LoginEvent.SOCKET_STATE_CHANGED,this.socketStateChanged,this);
         Mysocket.getInstance();
+    }
+    
+    private card: CardView;
+    private CardTrance():void{
+        this.card.tranceBack();
     }
     
     private loginWnd: LoginWnd;
