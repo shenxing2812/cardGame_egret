@@ -56,12 +56,12 @@ class RoomListWnd extends egret.Sprite {
 //            <e:Skin xmlns:e="http://ns.egret.com/eui"> <e:Image source="resource/assets/Panel/border.png"/> <e:Label textColor="0xfd0000" text="{data.label}"/> </e:Skin>`;
     
      //   dataGroup.itemRenderer = RoomCell;
-        dataGroup.itemRendererSkinName = "src/skin/cell/RoomCellSkin.exml";//也可以直接设置 exml 文件做为 ItemRenderer
+        dataGroup.itemRendererSkinName = "resource/skin/cell/RoomCellSkin.exml";//也可以直接设置 exml 文件做为 ItemRenderer
     
         var btn_selectRoom = new eui.Button();
         btn_selectRoom.label = "进入";
-        btn_selectRoom.x = 650;
-        btn_selectRoom.y = this.height/2;
+        btn_selectRoom.x = 100;
+        btn_selectRoom.y = 500;
         this.addChild(btn_selectRoom); 
         btn_selectRoom.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onButtonClick,this);
     

@@ -1,7 +1,7 @@
 {
 	"groups":[
 	{
-		"keys":"checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,card_back_png,animal1_png",
+		"keys":"checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,card_back_png,animal1_png,animal2_png,animal3_png,animal4_png,animal5_png,animal6_png,animal7_png,animal8_png,animal9_png,animal10_png,animal11_png,animal12_png",
 		"name":"preload"
 	}],
 	"resources":[
@@ -124,6 +124,61 @@
 		"name":"animal1_png",
 		"type":"image",
 		"url":"assets/animal_1.png"
+	},
+	{
+		"name":"animal2_png",
+		"type":"image",
+		"url":"assets/animal_2.png"
+	},
+	{
+		"name":"animal3_png",
+		"type":"image",
+		"url":"assets/animal_3.png"
+	},
+	{
+		"name":"animal4_png",
+		"type":"image",
+		"url":"assets/animal_4.png"
+	},
+	{
+		"name":"animal5_png",
+		"type":"image",
+		"url":"assets/animal_5.png"
+	},
+	{
+		"name":"animal6_png",
+		"type":"image",
+		"url":"assets/animal_6.png"
+	},
+	{
+		"name":"animal7_png",
+		"type":"image",
+		"url":"assets/animal_7.png"
+	},
+	{
+		"name":"animal8_png",
+		"type":"image",
+		"url":"assets/animal_8.png"
+	},
+	{
+		"name":"animal9_png",
+		"type":"image",
+		"url":"assets/animal_9.png"
+	},
+	{
+		"name":"animal10_png",
+		"type":"image",
+		"url":"assets/animal_10.png"
+	},
+	{
+		"name":"animal11_png",
+		"type":"image",
+		"url":"assets/animal_11.png"
+	},
+	{
+		"name":"animal12_png",
+		"type":"image",
+		"url":"assets/animal_12.png"
 	},
 	{
 		"name":"card_back_png",

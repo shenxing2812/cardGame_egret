@@ -27,8 +27,8 @@
     "resource/eui_skins/ToggleSwitchSkin.exml",
     "resource/eui_skins/VScrollBarSkin.exml",
     "resource/eui_skins/VSliderSkin.exml",
-    "src/skin/PlayerViewSkin.exml",
-    "src/skin/cell/RoomCellSkin.exml",
-    "src/skin/loginSkin.exml"
+    "resource/skin/PlayerViewSkin.exml",
+    "resource/skin/cell/RoomCellSkin.exml",
+    "resource/skin/loginSkin.exml"
   ]
 }

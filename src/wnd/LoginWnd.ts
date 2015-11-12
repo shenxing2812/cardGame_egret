@@ -12,7 +12,7 @@ class LoginWnd extends eui.Component{
     public constructor() {
         super();
         this.addEventListener(eui.UIEvent.COMPLETE,this.onComplete,this);
-        this.skinName = "src/skin/loginSkin.exml";
+        this.skinName = "resource/skin/loginSkin.exml";
 	}
 	
 	 

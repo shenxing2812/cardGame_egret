@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="sddSkin" width="300" height="100" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="img_head" width="77" height="73" x="8" y="6"/>
+	<e:Label id="lab_name" text="名字名字" x="89" y="8" width="163" height="29"/>
+	<e:Label id="lab_leftCard" text="牌堆剩余：12" x="92" y="49" width="186" height="29"/>
+</e:Skin>

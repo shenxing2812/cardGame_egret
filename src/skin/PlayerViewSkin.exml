@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="sddSkin" width="120" height="160" xmlns:e="http://ns.egret.com/eui">
-	<e:Image id="img_head" width="77" height="73" x="15" y="13"/>
-	<e:Label id="lab_name" text="名字名字" x="23" y="100" width="68" height="29"/>
-</e:Skin>

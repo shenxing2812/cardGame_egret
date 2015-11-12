@@ -1,7 +1,7 @@
 {
 	"native": {
 		"path_ignore": [],
-		"ios_path": "../cardGame_ios"
+		"ios_path": "../card2_ios"
 	},
 	"publish": {
 		"web": 0,

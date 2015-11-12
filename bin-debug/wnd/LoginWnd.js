@@ -8,7 +8,7 @@ var LoginWnd = (function (_super) {
     function LoginWnd() {
         _super.call(this);
         this.addEventListener(eui.UIEvent.COMPLETE, this.onComplete, this);
-        this.skinName = "src/skin/loginSkin.exml";
+        this.skinName = "resource/skin/loginSkin.exml";
     }
     var d = __define,c=LoginWnd;p=c.prototype;
     p.createChildren = function () {
